@@ -10,6 +10,7 @@ function App() {
     <main className="container">
       <Tabs selectedTabClassName="react-tabs__tab--selected">
           <TabList>
+            <img src="/GameScripts.ico" className="homeicon" alt="Vite logo" />
             <Tab>Home</Tab>
             <Tab>Settings</Tab>
           </TabList>

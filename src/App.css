@@ -45,6 +45,14 @@
   filter: drop-shadow(0 0 2em #24c8db);
 }
 
+.homeicon{
+  height: 4em;
+  width: 4em;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 0.5em;
+}
+
 .row {
   display: flex;
   justify-content: center;
@@ -135,7 +143,7 @@ button {
 .react-tabs__tab-list {
   display: flex;
   flex-direction: column;
-  width: 250px; /* Fixed width for the tab list */
+  width: 150px; /* Fixed width for the tab list */
   border: none;
   padding-right: 10px;
   margin: 0;
@@ -148,6 +156,7 @@ button {
   border: none;
   border-left: 3px solid transparent;
   outline: none;
+  border-radius: 0;
 }
 
 .react-tabs__tab--selected {
@@ -162,8 +171,30 @@ button {
   content: none; /* Remove the pseudo-element */
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
 .react-tabs__tab-panel {
   flex-grow: 1;
   padding: 20px;
+}
+
+.tab-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Tab colors */
+
+.react-tabs__tab--selected:nth-child(1) {
+  border-left: 4px solid #ff7300;
+}
+
+.react-tabs__tab--selected:nth-child(2) {
+  border-left: 4px solid #00f7ff;
 }

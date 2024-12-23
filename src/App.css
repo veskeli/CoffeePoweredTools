@@ -118,3 +118,40 @@ button {
     background-color: #0f0f0f69;
   }
 }
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.react-tabs {
+  display: flex;
+  width: 100%;
+}
+
+.react-tabs__tab-list {
+  display: flex;
+  flex-direction: column;
+  width: 200px; /* Fixed width for the tab list */
+  border-right: 1px solid #ccc;
+  padding-right: 10px;
+  margin: 0;
+  list-style: none;
+}
+
+.react-tabs__tab {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-left: 3px solid transparent;
+}
+
+.react-tabs__tab--selected {
+  font-weight: bold;
+  border-left: 3px solid #007bff;
+}
+
+.react-tabs__tab-panel {
+  flex-grow: 1;
+  padding: 20px;
+}

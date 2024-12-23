@@ -138,6 +138,7 @@ button {
   display: flex;
   width: 100%;
   flex-grow: 1;
+  background-color: #232323;
 }
 
 .react-tabs__tab-list {
@@ -180,6 +181,7 @@ body, html {
 .react-tabs__tab-panel {
   flex-grow: 1;
   padding: 20px;
+  background-color: #553d3d;
 }
 
 .tab-container {

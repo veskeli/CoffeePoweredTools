@@ -8,8 +8,6 @@ import Settings from "./Settings";
 function App() {
   return (
     <main className="container">
-      <h1>Welcome to Coffee powered tools!</h1>
-
       <Tabs selectedTabClassName="react-tabs__tab--selected">
           <TabList>
             <Tab>Home</Tab>

@@ -83,6 +83,8 @@ button {
   padding:4px;
   border: none;
   border-left: 3px solid transparent;
+  text-align: left;
+  text-indent: 8px;
 }
 
 button:hover {
@@ -134,16 +136,6 @@ button {
   width: 100%;
   flex-grow: 1;
   background-color: #232323;
-}
-
-.react-tabs__tab-list {
-  display: flex;
-  flex-direction: column;
-  border: none;
-  padding: 0;
-  padding-right: 10px;
-  margin: 0;
-  list-style: none;
 }
 
 .tab-list-expanded{

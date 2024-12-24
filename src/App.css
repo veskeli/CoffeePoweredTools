@@ -41,7 +41,7 @@
   width: 2em;
   display: block;
   left: 0;
-  margin-left: 1em;
+  margin-left: 10px;
   padding-bottom: 0.3em;
 }
 
@@ -131,6 +131,12 @@ button {
   align-items: start;
 }
 
+.tab-header{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
 .react-tabs {
   display: flex;
   width: 100%;
@@ -139,7 +145,7 @@ button {
 }
 
 .tab-list-expanded{
-  width: 150px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   border: none;
@@ -172,8 +178,13 @@ button {
   font-weight: bold;
   border-left: 3px solid #ff7b00;
   border-bottom: none;
-  background-color: #525151;
+  background-color: #232323;
   color: #ffffff;
+}
+
+.react-tabs__tab:hover {
+  background-color: #3d3d3d;
+  border-left: 3px solid #396cd8;
 }
 
 .react-tabs__tab:focus::after {
@@ -201,10 +212,10 @@ body, html {
 
 /* Tab colors */
 
-.react-tabs__tab--selected:nth-child(1) {
+.react-tabs__tab--selected:nth-child(3) {
   border-left: 4px solid #ff7300;
 }
 
-.react-tabs__tab--selected:nth-child(2) {
+.react-tabs__tab--selected:nth-child(4) {
   border-left: 4px solid #00f7ff;
 }

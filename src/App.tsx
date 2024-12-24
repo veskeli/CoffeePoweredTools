@@ -17,7 +17,10 @@ function App() {
     <main className="container">
       <Tabs selectedTabClassName="react-tabs__tab--selected">
         <TabList className={collapsed ? "tab-list-collapsed" : "tab-list-expanded"}>
-            <img src="/GameScripts.ico" className="homeicon" alt="Vite logo" />
+            <div className="tab-header">
+              <img src="/GameScripts.ico" className="homeicon" alt="Vite logo" />
+              {!collapsed && <span className="app-title" style={{ fontSize: "14px", fontWeight: "bold" }}>Coffee Powered Tools</span>}
+            </div>
             <button onClick={toggleCollapse} className="collapse-button">
               <FaBars/> {!collapsed && "Collapse"}
             </button>

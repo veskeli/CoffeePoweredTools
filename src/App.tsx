@@ -17,10 +17,10 @@ function App() {
     <main className="container">
       <Tabs selectedTabClassName="react-tabs__tab--selected">
         <TabList className={collapsed ? "tab-list-collapsed" : "tab-list-expanded"}>
+            <img src="/GameScripts.ico" className="homeicon" alt="Vite logo" />
             <button onClick={toggleCollapse} className="collapse-button">
               <FaBars/> {!collapsed && "Collapse"}
             </button>
-            <img src="/GameScripts.ico" className="homeicon" alt="Vite logo" />
             <Tab>
               <FaHome/> {!collapsed && "Home"}
             </Tab>

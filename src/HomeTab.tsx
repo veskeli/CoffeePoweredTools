@@ -1,5 +1,6 @@
 // HomeTab.tsx
 import React from 'react';
+import { Button } from "@/components/ui/button"
 
 const HomeTab = () => (
   <div className="row">
@@ -11,6 +12,7 @@ const HomeTab = () => (
       <img src="/coffee3.png" className="logo coffee" alt="coffee logo" />
       <p> Original Coffee power tools </p>
     </a>
+    <Button>Testing button</Button>
   </div>
 );
 
